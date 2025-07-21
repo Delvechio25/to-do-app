@@ -5,7 +5,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    configFileProvider([configFile(fileId: 'ed481898-65e2-4d03-93ad-b9079b286ea2', targetLocation: '.env')]) {
+                    configFileProvider([configFile(fileId: 'efecb88a-4a30-4256-954b-47ed3f03e5d7', targetLocation: '.env')]) {
                         sh 'docker build -t todo-list-app .'
                     }
                 }
